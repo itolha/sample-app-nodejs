@@ -36,4 +36,4 @@ jobs:
 
       - name: Proof
         run: | 
-            ls -la
+            ls -la .next/
