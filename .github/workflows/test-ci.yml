@@ -5,7 +5,7 @@ on:
     branches:
       - gh-actions
   
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -29,21 +29,10 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: | 
+          npm run test
+          echo "-------------------------------"
+          ls
 
       - name: Build project
         run: npm run build
-
-      - name: Clean
-        run: rm -r node_modules/
-
-      - name: Upload build artifacts
-        if: success()
-        uses: actions/upload-artifact@v3
-        with:
-          name: next-build
-          path: .next/
-
-      - name: Proof
-        run: | 
-            ls -la .next/
