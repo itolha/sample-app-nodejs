@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "npx next build",
+    "build": "next build",
     "start": "next start -p $PORT",
     "test": "jest --updateSnapshot",
     "lint": "eslint . --ext .ts,.tsx,.js",
