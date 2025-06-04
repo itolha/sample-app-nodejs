@@ -12,4 +12,5 @@ module.exports = {
   coverageDirectory: '<rootDir>/coverage',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jsdom',
+  reporters: ['default', 'jest-junit'],
 };

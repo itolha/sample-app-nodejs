@@ -33,6 +33,7 @@ jobs:
           npm run test
           echo "-------------------------------"
           ls
+          rm -rf ./node_modules
 
       - name: Build project
         run: npm run build
