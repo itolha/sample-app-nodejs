@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "npx next build",
     "start": "next start -p $PORT",
     "test": "jest --reporters=default --reporters=jest-junit",
     "lint": "eslint . --ext .ts,.tsx,.js",
